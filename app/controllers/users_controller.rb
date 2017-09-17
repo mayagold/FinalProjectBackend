@@ -3,7 +3,6 @@ class UsersController < ApplicationController
   before_action :authenticate_token, except: [:login, :create]
   before_action :authorize_user, except: [:login, :create, :index]
 
-
   # GET /users
   def index
     @users = User.all
