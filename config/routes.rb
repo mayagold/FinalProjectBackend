@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :members
   resources :gears
   resources :users do
     collection do
