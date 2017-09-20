@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+  resources :notices
   resources :members
   resources :gears
   resources :users do
